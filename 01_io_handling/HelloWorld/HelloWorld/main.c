@@ -1,4 +1,5 @@
-#include <stdio.h>
+#include <stdio.h> // for printf
+#include <stdlib.h> // for system("pause")
 
 // This program is intended to demonstrate how the command line arguments can be parsed in C.
 // If your program is not designed to run from command window (e.g., PowerShell or cmd.exe) with different input arguments
@@ -21,6 +22,7 @@ int main(int argc, char* argv[])
 		printf("This program consists of %d command line arguments\n", argc);
 	}
 	printf("Hello world!\n");
+	
+	system("pause"); // Prevents immediately closing the console when the code finishes
 	return 0;
-	system("pause");
 }

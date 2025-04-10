@@ -25,7 +25,6 @@ int main(int argc, char* argv[])
 	{
 		double currentResistance = 0.0;
 		double resultantResistance = 0.0;
-		double reciprocalResultantResistance = 0.0;
 
 		while (1) // infinite loop: we read the next resistance value until it is zero or negative
 		{
@@ -44,14 +43,14 @@ int main(int argc, char* argv[])
 				}
 				case 'P':
 				{
-					reciprocalResultantResistance += 1.0 / currentResistance;
+					resultantResistance += 1.0 / currentResistance;
 					break;
 				}
 			}
 		}
 		if ((layoutType == 'P') && (resultantResistance > 0))
 		{
-			resultantResistance = 1.0 / reciprocalResultantResistance;
+			resultantResistance = 1.0 / resultantResistance;
 		}
 		printf("The resultant resistance value: Rr = %g. \n", resultantResistance);
 	}
