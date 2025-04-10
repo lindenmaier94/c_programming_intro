@@ -53,5 +53,4 @@ dkms.conf
 
 #Visual Studio
 .vs/
-Debug/
-Release/
+*.tlog
