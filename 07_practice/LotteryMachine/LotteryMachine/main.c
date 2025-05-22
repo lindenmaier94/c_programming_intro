@@ -23,6 +23,8 @@ int main(int argc, char* argv[])
 	* and then draws NUM_OF_DRAWS number of random integers between MIN and MAX. Finally, the program
 	* counts the number of right guesses.
 	*/
+	printf("This program is a lottery game. Good luck!\n");
+	printf("Please guess the numbers.\n");
 	int guessArray[NUM_OF_DRAWS]; // array to store the user guesses
 	readNumbers(guessArray, NUM_OF_DRAWS, MIN, MAX); // reading user guesses
 	bubbleSort(guessArray, NUM_OF_DRAWS, ASCEND); // sorting the guessed numbers
