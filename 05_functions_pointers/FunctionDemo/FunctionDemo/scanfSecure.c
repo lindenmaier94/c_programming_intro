@@ -38,7 +38,7 @@ int scanfBuffer(const char* format, void* memoryAdress, const char* message)
 	} while ((!isScanned) || (numOfBufferedChar > 0));
 }
 
-int clearBuffer(void)
+int clearBuffer()
 {
 	// The standard input buffer (stdin) stream where the user inputs are stored
 	// has FILE* type which is pointer that points to the input buffer.

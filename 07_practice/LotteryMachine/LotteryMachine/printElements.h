@@ -1,3 +1,3 @@
 #pragma once
 
-void printElements(void* array[], int numOfElems, const char* format);
+void printElements(int array[], int numOfElems, const char* format);
